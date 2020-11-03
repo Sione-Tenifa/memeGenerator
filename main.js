@@ -19,14 +19,15 @@ function createMeme(top, bottom, imgURL){
     const background = new Image();
     background.src = imgURL;
     background.onload = function(){
-        ctx.drawImage(background, 0, 0);   
+        ctx.drawImage(background, 0, 0, 600, 500);   
         ctx.textAlign = "center";
         ctx.font = "50px Impact,sans-serif";
         ctx.fillStyle = "white";
         ctx.strokeStyle = "black";
         ctx.lineWidth = "2";
-        ctx.fillText(top, 150, 40);
-        ctx.fillText(bottom, 150, 200)
+        // ctx.fillRect(0, 0, mainCanvas.width, mainCanvas.height);
+        ctx.fillText(top, mainCanvas.width/2, 40);
+        ctx.fillText(bottom, mainCanvas.width/2, 200)
       }
     
 }
