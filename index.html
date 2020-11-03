@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h1>Meme Generator</h1>
+        <form action="" id="memeForm">
+            <p id="top-text">
+                <label for="">Top text:
+                    <input type="text" name="top-text" placeholder="Top Text">
+                </label>
+            </p>
+    
+            <p id="bottom-text">
+                <label for="">Bottom Text:
+                    <input type="text" name="bottom-text">
+                </label>
+            </p>
+    
+            <p>
+                <input id="imgURL" name="imgURL" class="block" type="text" placeholder="Link to image" />
+    
+            </p>
+            <input type="submit">
+        </form>
+
+    <div>
+        <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000000;">
+        </canvas>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
