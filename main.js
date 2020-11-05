@@ -4,10 +4,9 @@ const mainCanvas = document.querySelector("#myCanvas")
 const form = document.querySelector("#memeForm")
 const imgURL = document.querySelector("input[name = 'imgURL']")
 
-
 form.addEventListener("submit", function(e){
 	e.preventDefault()
-	const memeValues = createMeme(topText.value, bottomText.value, imgURL.value)
+	createMeme(topText.value, bottomText.value, imgURL.value)
 
 })
 
@@ -27,7 +26,7 @@ function createMeme(top, bottom, imgURL){
         ctx.lineWidth = "2";
         // ctx.fillRect(0, 0, mainCanvas.width, mainCanvas.height);
         ctx.fillText(top, mainCanvas.width/2, 40);
-        ctx.fillText(bottom, mainCanvas.width/2, 200)
+        ctx.fillText(bottom, mainCanvas.width/2, 480)
       }
     
 }
